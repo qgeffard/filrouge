@@ -12,7 +12,8 @@
             <form method="get" action="creation-client">
                 <fieldset>
                     <legend>Informations client</legend>
-    
+    				<input type="hidden" name="form_feed" value="1" />
+    				
                     <label for="nomClient">Nom <span class="requis">*</span></label>
                     <input type="text" id="nomClient" name="nomClient" value="" size="20" maxlength="20" />
                     <br />

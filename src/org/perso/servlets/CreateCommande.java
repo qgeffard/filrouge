@@ -14,7 +14,7 @@ public class CreateCommande extends HttpServlet {
 			this.getServletContext().getRequestDispatcher( "/WEB-INF/createCommande.jsp" ).forward( req, resp );
 		} else {
 //			creation de la commande
-			this.getServletContext().getRequestDispatcher( "/WEB-INF/afficherCommande.jsp" ).forward( req, resp );
+			this.getServletContext().getRequestDispatcher( "/WEB-INF/afficherCommande.jsp" ).forward( req, resp ); 
 		}
 	}
 }

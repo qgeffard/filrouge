@@ -10,11 +10,11 @@ import javax.servlet.http.HttpServletResponse;
 public class CreateClient extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		if(req.getParameter("form_feed").isEmpty()){
+		if(req.getParameter("form_feed")==null){
 			this.getServletContext().getRequestDispatcher( "/WEB-INF/createClient.jsp" ).forward( req, resp );
 		} else {
 //			creation de la commande
-			this.getServletContext().getRequestDispatcher( "/WEB-INF/afficherClient.jsp" ).forward( req, resp );	
+			this.getServletContext().getRequestDispatcher( "/WEB-INF/afficherClient.jsp" ).forward( req, resp );
 		}
 	}
 }
